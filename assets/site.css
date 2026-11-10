@@ -119,3 +119,28 @@ details p{margin:10px 0 0}
   section{padding:52px 0}
   .wrap{padding:0 16px}
 }
+
+/* Tier list on the home page */
+.sub{color:var(--muted);margin:-8px 0 24px;max-width:40em}
+.tiers{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;counter-reset:t}
+.tiers li{counter-increment:t;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px 18px 58px;position:relative}
+.tiers li::before{content:counter(t);position:absolute;left:18px;top:16px;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--display);font-size:12px;color:var(--amber)}
+.tiers b{font-family:var(--display);font-weight:400;font-size:14px;letter-spacing:.1em}
+.tiers span{color:var(--muted);font-size:13px;margin-left:10px}
+.tiers p{margin:6px 0 0;color:var(--muted);font-size:15px}
+
+/* Press kit */
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 20px;margin:0 0 8px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;color:var(--ink)}
+.downloads{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:12px 0 20px}
+.dl{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:10px}
+.dl:hover{border-color:var(--blue);color:var(--ink)}
+.dl .thumb{aspect-ratio:16/10;border-radius:8px;background:#060814;display:grid;place-items:center;overflow:hidden}
+.dl .thumb{padding:12px}
+.dl .thumb img{max-width:100%;max-height:110px;width:auto;height:auto}
+.dl small{color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:12px 0 20px}
+.shot{aspect-ratio:19.5/9;border:1px dashed var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);font-size:13px;text-align:center;padding:10px}
+@media (max-width:520px){.facts{grid-template-columns:1fr;gap:0}.facts dd{margin-bottom:10px}}
+.doc code{font-family:var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
