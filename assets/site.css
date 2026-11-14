@@ -65,6 +65,7 @@ img{max-width:100%;display:block}
 .store-badge svg{width:22px;height:22px;fill:currentColor}
 .store-badge small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:0;color:#ccd}
 .store-badge[aria-disabled="true"]{cursor:default}
+.store-badge[href]:hover,.store-badge[href]:focus-visible{border-color:#fff;background:#111}
 .ghost{color:var(--muted);font-size:14px}
 
 /* Sections */
