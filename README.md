@@ -2,6 +2,8 @@
 
 The public website for Comet Road, an arcade space racer for iPhone. GitHub Pages serves it at https://mcederdev.github.io/comet-road/.
 
+App Store (pre-order): https://apps.apple.com/app/id6834401952 (app id 6834401952, used in the `apple-itunes-app` Smart App Banner meta on the home, press kit and support pages).
+
 | Page | URL |
 | --- | --- |
 | Landing page | https://mcederdev.github.io/comet-road/ |
