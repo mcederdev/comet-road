@@ -111,6 +111,9 @@ details p{margin:10px 0 0}
 .foot .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
 .foot nav{display:flex;gap:18px;flex-wrap:wrap}
 .foot a{color:var(--muted)}
+.foot .social{display:flex;gap:4px;margin:-8px 0}
+.foot .social a{display:grid;place-items:center;width:36px;height:36px;border-radius:10px}
+.foot .social a:hover,.foot .social a:focus-visible{color:var(--ink,#fff);background:rgba(255,255,255,.08)}
 
 @media (max-width:760px){
   .hero .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:150px;gap:28px}
