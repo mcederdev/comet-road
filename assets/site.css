@@ -143,7 +143,10 @@ details p{margin:10px 0 0}
 .dl .thumb{padding:12px}
 .dl .thumb img{max-width:100%;max-height:110px;width:auto;height:auto}
 .dl small{color:var(--muted)}
-.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:12px 0 20px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:12px 0 20px}
+.shots .dl{display:block;padding:0;overflow:hidden}
+.shots .dl .thumb{display:block;aspect-ratio:auto;padding:0;border-radius:0}
+.shots .dl .thumb img{display:block;width:100%;max-width:none;max-height:none;height:auto}
 .shot{aspect-ratio:19.5/9;border:1px dashed var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);font-size:13px;text-align:center;padding:10px}
 @media (max-width:520px){.facts{grid-template-columns:1fr;gap:0}.facts dd{margin-bottom:10px}}
 .doc code{font-family:var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
